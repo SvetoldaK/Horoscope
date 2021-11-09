@@ -1,69 +1,68 @@
 import java.util.Random;
-/*
-!!! Внимание !!!
-В строку аргумента знак зодиака вводить:
--на русском языке;
--с маленькой буквы.
- */
+
+/**
+ * В строку аргумента знак зодиака вводить:
+ * -на русском языке;
+ * -с маленькой буквы.
+ **/
 public class Application {
     public static void main(String[] args) {
         arg(args);
     }
 
     public static void arg(String[] args) {
-        if (args[0].equals("овен")){
+        if (args[0].equals("овен")) {
             System.out.println("Выбранный знак зодиака - овен");
             aries();
         }
-        else if (args[0].equals("телец")){
+        else if (args[0].equals("телец")) {
             System.out.println("Выбранный знак зодиака - телец");
             taurus();
         }
-        else if (args[0].equals("близнецы")){
+        else if (args[0].equals("близнецы")) {
             System.out.println("Выбранный знак зодиака - близнецы");
             gemini();
         }
-        else if (args[0].equals("рак")){
+        else if (args[0].equals("рак")) {
             System.out.println("Выбранный знак зодиака - рак");
             cancer();
         }
-        else if (args[0].equals("лев")){
+        else if (args[0].equals("лев")) {
             System.out.println("Выбранный знак зодиака - лев");
             leo();
         }
-        else if (args[0].equals("дева")){
+        else if (args[0].equals("дева")) {
             System.out.println("Выбранный знак зодиака - дева");
             virgo();
         }
-        else if (args[0].equals("весы")){
+        else if (args[0].equals("весы")) {
             System.out.println("Выбранный знак зодиака - весы");
             libra();
         }
-        else if (args[0].equals("скорпион")){
+        else if (args[0].equals("скорпион")) {
             System.out.println("Выбранный знак зодиака - скорпион");
             scorpio();
         }
-        else if (args[0].equals("стрелец")){
+        else if (args[0].equals("стрелец")) {
             System.out.println("Выбранный знак зодиака - стрелец");
             sagittarius();
         }
-        else if (args[0].equals("козерог")){
+        else if (args[0].equals("козерог")) {
             System.out.println("Выбранный знак зодиака - козерог");
             capricorn();
         }
-        else if (args[0].equals("водолей")){
+        else if (args[0].equals("водолей")) {
             System.out.println("Выбранный знак зодиака - водолей");
             aquarius();
         }
-        else if (args[0].equals("рыбы")){
+        else if (args[0].equals("рыбы")) {
             System.out.println("Выбранный знак зодиака - рыбы");
             pisces();
         }
         else System.out.println("В выборе знака зодиака допущена ошибка");
+    }
 
-        }
-
-    public static void aries(){ //овен
+    public static void aries(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -71,7 +70,7 @@ public class Application {
         }
         else System.out.println("Сегодня обычно свойственная вам застенчивость будет забыта. Вы удивитесь, насколько легко вам будет заговорить с незнакомцем как со старым другом. Возможно, вы приобретете новых друзей.");
     }
-    public static void taurus(){ //телец
+    public static void taurus(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -80,7 +79,7 @@ public class Application {
         else System.out.println("Новые и весьма полезные проекты остановятся в своем развитии исключительно по причине отсутствия связи, или недостаточной ее интенсивности. Озаботьтесь решением этой задачи.");
 
     }
-    public static void gemini(){ //близнецы
+    public static void gemini(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -89,7 +88,7 @@ public class Application {
         else System.out.println("Сегодня вам категорически противопоказаны спешка и азарт. И то и другое может довести вас до весьма плачевного состояния.");
 
     }
-    public static void cancer(){ //рак
+    public static void cancer(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -98,7 +97,7 @@ public class Application {
         else System.out.println("Сегодня вы, возможно, попадете в ситуацию, когда лучшим выходом будет отступление. Упрямством ничего добиться не удастся.");
 
     }
-    public static void leo(){ //лев
+    public static void leo(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -106,7 +105,7 @@ public class Application {
         }
         else System.out.println("Сегодня вам, возможно, придется не раз менять свое мнение по тому или иному поводу. Так что лучше не торопиться его высказывать.");
     }
-    public static void virgo(){ //дева
+    public static void virgo(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -115,7 +114,7 @@ public class Application {
         else System.out.println("Сегодняшний день будет удачен для всякого рода встреч и разговоров - от приятных дружеских бесед ни о чем и сплетен, до деловых переговоров.");
 
     }
-    public static void libra(){ //весы
+    public static void libra(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -124,7 +123,7 @@ public class Application {
         else System.out.println("Сегодня преуспеет тот, кто способен не только читать, но и писать между строк, причем, желательно, без ошибок.");
 
     }
-    public static void scorpio(){ //скорпион
+    public static void scorpio(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -133,7 +132,7 @@ public class Application {
         else System.out.println("Сегодня вы вновь получите возможность приняться за когда-то отложенное дело. И, что самое интересное, оно пойдет.");
 
     }
-    public static void sagittarius(){ //стрелец
+    public static void sagittarius(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -142,7 +141,7 @@ public class Application {
         else System.out.println("Грядущие перемены либо не затронут вас, либо изменят ваше положение к лучшему. Не сопротивляйтесь им.");
 
     }
-    public static void capricorn(){ //козерог
+    public static void capricorn(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -151,7 +150,7 @@ public class Application {
         else System.out.println("Сегодня вы будете знать ответы на все вопросы. Будьте же благосклонны к окружающим, не скрывайте от них своего знания.");
 
     }
-    public static void aquarius(){ //водолей
+    public static void aquarius(){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
@@ -159,7 +158,7 @@ public class Application {
         }
         else System.out.println("Сегодня вы можете слегка сбиться с курса. Ничего особо страшного вам не грозит, это обернется лишь забавным приключением, которое, правда, может оказаться несколько дороговатым.");
     }
-    public static void pisces (){ //рыбы
+    public static void pisces (){
         Random random = new Random();
         int a = random.nextInt(2);
         if (a == 1){
